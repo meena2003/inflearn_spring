@@ -14,18 +14,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    //예상
-    //"call AppConfig.memberService"
-    //"call AppConfig.memberRepository"
-    //"call AppConfig.memberRepository"
-    //"call AppConfig.orderService"
-    //"call AppConfig.memberRepository"
-
-    //실제
-    //"call AppConfig.memberService"
-    //"call AppConfig.memberRepository"
-    //"call AppConfig.orderService"
-
     @Bean
     public MemberService memberService() {
         System.out.println("call AppConfig.memberService");
